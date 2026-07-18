@@ -50,7 +50,7 @@
 
           modules = [
             ./hosts/${host}/configuration.nix
-            stylix.nixosModules.stylix
+            #stylix.nixosModules.stylix
           ];
 
           specialArgs = {
@@ -65,7 +65,7 @@
     in
     {
       nixosConfigurations = {
-        vm = mkHost "vm";
+        vm = mkHost "vm" "x86_64-linux";
       };
     };
 }
