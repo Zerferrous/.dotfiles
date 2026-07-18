@@ -44,23 +44,14 @@
       forAllSystems = nixpkgs.lib.genAttrs systems;
 
       mkHost =
-        host:
+        host: system:
         nixpkgs.lib.nixosSystem {
-          system = forAllSystems (system: system);
-
+          inherit system;
           modules = [
             ./hosts/${host}/configuration.nix
-            #stylix.nixosModules.stylix
+            stylix.nixosModules.stylix
           ];
-
-          specialArgs = {
-            inherit
-              self
-              inputs
-              outputs
-              host
-              ;
-          };
+          specialArgs = { inherit self inputs outputs host; };
         };
     in
     {
