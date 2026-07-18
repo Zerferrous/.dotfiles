@@ -62,7 +62,7 @@
         };
     in
     {
-      nixosConfiguration = {
+      nixosConfigurations = {
         vm = mkHost "vm";
       };
     };
