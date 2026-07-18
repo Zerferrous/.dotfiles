@@ -27,14 +27,6 @@ in
       programs.home-manager.enable = true;
 
       home = {
-
-        # imports = [
-        #   inputs.niri-flake.homeModules.niri
-        #   inputs.stylix.homeModules.stylix
-        #   ../desktop/default.nix
-        #   ../stylix/default.nix
-        # ];
-
         username = "${username}";
         homeDirectory = "/home/${username}";
         stateVersion = "26.05"; # Do not change!

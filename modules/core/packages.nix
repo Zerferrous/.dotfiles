@@ -5,5 +5,7 @@
   environment.systemPackages = with pkgs; [
     git
     eza
+    ranger
+    yazi
   ];
 }

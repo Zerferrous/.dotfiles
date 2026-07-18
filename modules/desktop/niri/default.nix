@@ -20,7 +20,7 @@
 
       binds = {
         "Mod+T".action.spawn = "alacritty";
-        "Mod+A".action.spawn = "walker";
+        "Mod+A".action.spawn = "rofi";
 
         "Mod+Shift+Slash".action.show-hotkey-overlay = {};
         "Mod+O".action.toggle-overview = {};
