@@ -28,11 +28,11 @@
 
   };
 
-  outputs = { 
+  outputs = inputs@{ 
     self, 
     nixpkgs, 
     ... 
-  }@inputs:
+  }:
     let
       inherit (self) outputs;
 
