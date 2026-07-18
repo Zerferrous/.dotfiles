@@ -5,8 +5,10 @@
 }:
 {
   home-manager.sharedModules = [
+    inputs.niri-flake.homeModules.niri
     (_: {
       programs.niri = {
+        enable = true;
 
         settings = {
           prefer-no-csd = true;
