@@ -4,7 +4,7 @@
 }:
 {
   imports = [
-    inputs.niri-flake.nixosModule.niri
+    inputs.niri-flake.nixosModules.niri
   ];
 
   programs.niri = {
