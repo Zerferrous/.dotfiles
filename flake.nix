@@ -47,8 +47,6 @@
         nixpkgs.lib.nixosSystem {
           system = forAllSystems (system: system);
 
-          specialArgs = { inherit inputs; }; 
-
           modules = [
             ./hosts/${host}/configuration.nix
           ];
