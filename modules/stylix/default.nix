@@ -1,17 +1,9 @@
-{ pkgs, lib, stylix, ... }:
+{ pkgs, lib, ... }:
 {
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
   stylix.polarity = "dark";
   stylix.autoEnable = true;
-
-  stylix.targets = {
-    niri.enable = true;
-    fish.enable = false;
-    alacritty.enable = true;
-    btop.enable = true;
-    starship.enable = true;
-  };
 
   stylix.cursor = {
     package = pkgs.volantes-cursors;
@@ -20,21 +12,21 @@
   };
 
   stylix.fonts = {
-    serif = {
-      package = pkgs.poppins;
-      name = "Poppins";
-    };
-    sansSerif = {
-      package = pkgs.poppins;
-      name = "Poppins";
-    };
-    monospace = {
-      package = pkgs.maple-mono.truetype;
-      name = "Maple Mono";
-    };
-    emoji = {
-      package = pkgs.noto-fonts-color-emoji;
-      name = "Noto Color Emoji";
-    };
+    serif = { package = pkgs.poppins; name = "Poppins"; };
+    sansSerif = { package = pkgs.poppins; name = "Poppins"; };
+    monospace = { package = pkgs.maple-mono.truetype; name = "Maple Mono"; };
+    emoji = { package = pkgs.noto-fonts-color-emoji; name = "Noto Color Emoji"; };
   };
-} 
+
+  home-manager.sharedModules = [
+    (_: {
+      stylix.targets = {
+        niri.enable = true;
+        fish.enable = false;
+        alacritty.enable = true;
+        btop.enable = true;
+        starship.enable = true;
+      };
+    })
+  ];
+}
