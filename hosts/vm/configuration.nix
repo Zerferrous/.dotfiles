@@ -10,6 +10,6 @@ in
     ./hardware-configuration.nix
     ./host-packages.nix
 
-    ./modules/default.nix
+    ../../modules/default.nix
   ];
 }
