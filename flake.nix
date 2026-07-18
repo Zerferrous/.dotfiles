@@ -31,6 +31,7 @@
   outputs = inputs@{ 
     self, 
     nixpkgs, 
+    stylix,
     ... 
   }:
     let
