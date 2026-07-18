@@ -32,6 +32,7 @@ in
           inputs.niri-flake.homeModules.niri
           inputs.stylix.homeModules.stylix
           ../desktop/default.nix
+          ../stylix/default.nix
         ];
 
         username = "${username}";
