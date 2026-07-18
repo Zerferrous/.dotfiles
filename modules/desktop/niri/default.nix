@@ -1,5 +1,12 @@
-{ config, ... }:
+{ config,
+  inputs,
+  ...
+}:
 {
+  imports = [
+    inputs.niri.nixosModule.niri
+  ];
+
   programs.niri = {
 
     settings = {

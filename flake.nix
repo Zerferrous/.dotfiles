@@ -11,7 +11,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    niri = {
+    niri-flake = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -30,8 +30,7 @@
 
   outputs = { 
     self, 
-    nixpkgs,
-    niri,
+    nixpkgs, 
     ... 
   }@inputs:
     let
