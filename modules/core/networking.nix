@@ -17,5 +17,5 @@ in
     };
     
     wireless.iwd.enable = true;
-  }
+  };
 }
