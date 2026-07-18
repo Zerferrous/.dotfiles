@@ -28,12 +28,12 @@ in
 
       home = {
 
-        imports = [
-          inputs.niri-flake.homeModules.niri
-          inputs.stylix.homeModules.stylix
-          ../desktop/default.nix
-          ../stylix/default.nix
-        ];
+        # imports = [
+        #   inputs.niri-flake.homeModules.niri
+        #   inputs.stylix.homeModules.stylix
+        #   ../desktop/default.nix
+        #   ../stylix/default.nix
+        # ];
 
         username = "${username}";
         homeDirectory = "/home/${username}";
