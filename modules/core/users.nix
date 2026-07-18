@@ -30,6 +30,7 @@ in
 
         imports = [
           inputs.niri-flake.homeModules.niri
+          inputs.stylix.homeModules.stylix
           ../desktop/default.nix
         ];
 
