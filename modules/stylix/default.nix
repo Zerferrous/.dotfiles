@@ -1,10 +1,5 @@
 { pkgs, lib, stylix, ... }:
 {
-
-  imports = [
-    inputs.stylix.nixosModules.stylix
-  ];
-
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
   stylix.polarity = "dark";

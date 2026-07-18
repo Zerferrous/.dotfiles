@@ -49,6 +49,7 @@
 
           modules = [
             ./hosts/${host}/configuration.nix
+            ./stylix.nixosModules.stylix
           ];
 
           specialArgs = {
