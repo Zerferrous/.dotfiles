@@ -1,5 +1,7 @@
-{ config,
+{ 
+  config,
   inputs,
+  lib,
   ...
 }:
 {
@@ -21,7 +23,7 @@
         };
       };
 
-      binds = with config.lib.niri.actions; {
+      binds = with lib.niri.actions; {
         "Mod+T".action.spawn = "alacritty";
         "Mod+A".action.spawn = "walker";
 
