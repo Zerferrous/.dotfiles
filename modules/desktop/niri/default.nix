@@ -1,14 +1,9 @@
 { 
   config,
   inputs,
-  lib,
   ...
 }:
 {
-  imports = [
-    inputs.niri-flake.nixosModules.niri
-  ];
-
   programs.niri = {
 
     settings = {
@@ -23,7 +18,7 @@
         };
       };
 
-      binds = with lib.niri.actions; {
+      binds = {
         "Mod+T".action.spawn = "alacritty";
         "Mod+A".action.spawn = "walker";
 
