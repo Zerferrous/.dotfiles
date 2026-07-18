@@ -16,6 +16,7 @@ in
 {
   imports = [
     inputs.home-manager.nixosModules.home-manager
+    ../desktop/niri/default.nix
   ];
 
   home-manager = {

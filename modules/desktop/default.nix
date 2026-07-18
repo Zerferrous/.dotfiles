@@ -3,6 +3,6 @@
 }:
 {
   imports = [
-    ./niri/default.nix
+    ./niri/system.nix
   ];
 }
