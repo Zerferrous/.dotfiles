@@ -6,7 +6,7 @@
 {
   home-manager.sharedModules = [
     (_: {
-      programs.wayle = {
+      services.wayle = {
         enable = true;
       };
     })
