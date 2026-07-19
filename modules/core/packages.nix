@@ -7,5 +7,6 @@
     eza
     ranger
     yazi
+    btop
   ];
 }
