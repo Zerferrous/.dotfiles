@@ -20,7 +20,7 @@ in
         -- Print a little welcome message when Neovim is opened!
         print("Hello world!")
         '';
-      }
+      };
 
       xdg.desktopEntries = {
         "nvim" = {
