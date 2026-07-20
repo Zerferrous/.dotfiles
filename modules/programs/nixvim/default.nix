@@ -10,8 +10,26 @@ in
 {
   home-manager.sharedModules = [
     (_: {
-      programs.nixvim = {
-        enable = true;
+      home.packages = with pkgs; [
+        inputs.nixvim.packages.${stdenv.hostPlatform.system}.default
+      ];
+      xdg.desktopEntries = {
+        "nvim" = {
+          name = "Neovim wrapper";
+          genericName = "Text Editor";
+          comment = "Edit text files";
+          exec = "${pkgs.${terminal}}/bin/${terminal} --class \"nvim-wrapper\" -e nvim %F";
+          icon = "nvim";
+          mimeType = [
+            "text/plain"
+            "text/x-makefile"
+          ];
+          categories = [
+            "Development"
+            "TextEditor"
+          ];
+          terminal = false;
+        };
       };
     })
   ];
