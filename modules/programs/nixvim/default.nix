@@ -9,10 +9,19 @@ let
 in
 {
   home-manager.sharedModules = [
+    inputs.nixvim.homeManagerModules.nixvim   
     (_: {
-      home.packages = with pkgs; [
-        inputs.nixvim.packages.${stdenv.hostPlatform.system}.default
-      ];
+
+      programs.nixvim = {
+        enable = true;
+        defaultEditor = true;
+
+        extraConfigLua = ''
+        -- Print a little welcome message when Neovim is opened!
+        print("Hello world!")
+        '';
+      }
+
       xdg.desktopEntries = {
         "nvim" = {
           name = "Neovim wrapper";
