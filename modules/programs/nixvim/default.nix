@@ -18,7 +18,7 @@ in
 
         imports = [
           ./settings.nix
-        ]
+        ];
       };
 
       # xdg.desktopEntries = {
