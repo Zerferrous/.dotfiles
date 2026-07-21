@@ -11,26 +11,26 @@
       noto-fonts
       noto-fonts-color-emoji
     ];
-    fontconfig = {
-      enable = true;
-      antialias = true;
-      defaultFonts = {
-        monospace = [
-          "JetBrainsMono Nerd Font"
-          "Maple Mono NF"
-          "Noto Mono"
-          "DejaVu Sans Mono" # Default
-        ];
-        sansSerif = [
-          "Noto Sans"
-          "DejaVu Sans" # Default
-        ];
-        serif = [
-          "Noto Serif"
-          "DejaVu Serif" # Default
-        ];
-        emoji = [ "Noto Color Emoji" ];
-      };
-    };
+    # fontconfig = {
+    #   enable = true;
+    #   antialias = true;
+    #   defaultFonts = {
+    #     monospace = [
+    #       "JetBrainsMono Nerd Font"
+    #       "Maple Mono NF"
+    #       "Noto Mono"
+    #       "DejaVu Sans Mono" # Default
+    #     ];
+    #     sansSerif = [
+    #       "Noto Sans"
+    #       "DejaVu Sans" # Default
+    #     ];
+    #     serif = [
+    #       "Noto Serif"
+    #       "DejaVu Serif" # Default
+    #     ];
+    #     emoji = [ "Noto Color Emoji" ];
+    #   };
+    # };
   };
 }
