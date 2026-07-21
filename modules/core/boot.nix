@@ -8,7 +8,7 @@
       limine = {
         enable = true;
 
-        resolution = "2560x1440x32";
+        #resolution = "2560x1440x32";
 
         style = {
           
