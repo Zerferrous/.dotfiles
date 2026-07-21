@@ -16,30 +16,29 @@ in
         enable = true;
         defaultEditor = true;
 
-        extraConfigLua = ''
-        -- Print a little welcome message when Neovim is opened!
-        print("Hello world!")
-        '';
+        imports = [
+          ./settings.nix
+        ]
       };
 
-      xdg.desktopEntries = {
-        "nvim" = {
-          name = "Neovim wrapper";
-          genericName = "Text Editor";
-          comment = "Edit text files";
-          exec = "${pkgs.${terminal}}/bin/${terminal} --class \"nvim-wrapper\" -e nvim %F";
-          icon = "nvim";
-          mimeType = [
-            "text/plain"
-            "text/x-makefile"
-          ];
-          categories = [
-            "Development"
-            "TextEditor"
-          ];
-          terminal = false;
-        };
-      };
+      # xdg.desktopEntries = {
+      #   "nvim" = {
+      #     name = "Neovim wrapper";
+      #     genericName = "Text Editor";
+      #     comment = "Edit text files";
+      #     exec = "${pkgs.${terminal}}/bin/${terminal} --class \"nvim-wrapper\" -e nvim %F";
+      #     icon = "nvim";
+      #     mimeType = [
+      #       "text/plain"
+      #       "text/x-makefile"
+      #     ];
+      #     categories = [
+      #       "Development"
+      #       "TextEditor"
+      #     ];
+      #     terminal = false;
+      #   };
+      # };
     })
   ];
 }
