@@ -6,5 +6,6 @@
     ./dashboard.nix
     ./whichkey.nix
     ./noice.nix
+    ./cmp.nix
   ];
 }
