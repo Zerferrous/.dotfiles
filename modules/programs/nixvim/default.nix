@@ -19,7 +19,7 @@ in
         imports = [
           ./settings.nix
           ./keybinds.nix
-          ./plugins
+          ./plugins/default.nix
         ];
       };
 
