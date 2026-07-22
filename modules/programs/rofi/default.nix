@@ -1,5 +1,4 @@
 {
-  config,
   lib,
   pkgs,
   host,
@@ -8,7 +7,7 @@
 let 
   inherit (import ../../../hosts/${host}/variables.nix) terminal;
   inherit (lib) getExe;
-  inherit (config.lib.formats.rasi) mkLiteral;
+  inherit (lib.formats.rasi) mkLiteral;
 in
 {
   home-manager.sharedModules = [
