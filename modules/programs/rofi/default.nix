@@ -16,7 +16,7 @@ in
           modi = "drun,run,window";
           lines = 5;
           show-icons = true;
-          terminal = ${terminal};
+          terminal = "${terminal}";
           drun-display-format = "{icon} {name}";
           location = 0;
           disable-history = false;
