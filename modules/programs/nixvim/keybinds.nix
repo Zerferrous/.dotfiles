@@ -6,6 +6,7 @@
     {
       action = "<cmd>Telescope find_files<CR>";
       key = "<leader>ff"; # Поиск файла по имени
+      desc = "Поиск файла по имени";
     }
 
     {

@@ -4,5 +4,7 @@
     ./lualine.nix
     ./treesitter.nix
     ./dashboard.nix
+    ./whichkey.nix
+    ./noice.nix
   ];
 }
