@@ -5,8 +5,6 @@
   stylix.polarity = "dark";
   stylix.autoEnable = false;
 
-  stylix.limine.enable = true;
-
   stylix.cursor = {
     package = pkgs.volantes-cursors;
     name = "volantes_cursors";
@@ -23,6 +21,7 @@
   home-manager.sharedModules = [
     (_: {
       stylix.targets = {
+        limine.enable = true;
         niri.enable = true;
         fish.enable = false;
         alacritty.enable = true;
