@@ -27,6 +27,7 @@
         btop.enable = true;
         starship.enable = true;
         wayle.enable = true;
+        rofi.enable = true;
       };
     })
   ];

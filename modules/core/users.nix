@@ -37,7 +37,7 @@ in
             else if editor == "vscode" then
               "code"
             else
-              "nano";
+              "vim";
           BROWSER = "${browser}";
           TERMINAL = "${terminal}";
         };
