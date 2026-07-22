@@ -80,8 +80,6 @@ in
 
             "button" = {
               padding = 10;
-              vertical-align = 0.5; 
-              horizontal-align = 0.5;
             };
           };
 
