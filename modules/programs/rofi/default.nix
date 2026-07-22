@@ -7,7 +7,7 @@
 let 
   inherit (import ../../../hosts/${host}/variables.nix) terminal;
   inherit (lib) getExe;
-  inherit (lib.formats.rasi) mkLiteral;
+  mkLiteral = val: { _type = "literal"; value = val; };
 in
 {
   home-manager.sharedModules = [
