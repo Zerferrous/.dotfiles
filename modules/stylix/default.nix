@@ -14,7 +14,7 @@
   stylix.fonts = {
     serif = { package = pkgs.poppins; name = "Poppins"; };
     sansSerif = { package = pkgs.poppins; name = "Poppins"; };
-    monospace = { package = pkgs.maple-mono.truetype; name = "Maple Mono"; };
+    monospace = { package = pkgs.nerd-fonts.jetbrains-mono; name = "JetBrainsMono Nerd Font"; };
     emoji = { package = pkgs.noto-fonts-color-emoji; name = "Noto Color Emoji"; };
   };
 
