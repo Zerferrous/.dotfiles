@@ -6,6 +6,7 @@
   stylix.autoEnable = false;
 
   stylix.targets.limine.enable = true;
+  stylix.targets.ly.enable = true;
 
   stylix.cursor = {
     package = pkgs.volantes-cursors;
