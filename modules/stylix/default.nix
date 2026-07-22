@@ -5,6 +5,8 @@
   stylix.polarity = "dark";
   stylix.autoEnable = false;
 
+  stylix.limine.enable = true;
+
   stylix.cursor = {
     package = pkgs.volantes-cursors;
     name = "volantes_cursors";
