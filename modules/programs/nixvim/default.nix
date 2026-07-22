@@ -20,6 +20,7 @@ in
           ./settings.nix
           ./keybinds.nix
           ./plugins/default.nix
+          ./lsp.nix
         ];
       };
 
