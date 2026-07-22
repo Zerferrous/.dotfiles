@@ -22,7 +22,7 @@
 
           binds = {
             "Mod+T".action.spawn = "alacritty";
-            "Mod+A".action.spawn = "rofi -show drun";
+            "Mod+A".action.spawn = ["rofi" "-show" "drun"];
 
             "Mod+Shift+Slash".action.show-hotkey-overlay = {};
             "Mod+O".action.toggle-overview = {};
