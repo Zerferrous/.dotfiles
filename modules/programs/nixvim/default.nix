@@ -18,6 +18,8 @@ in
 
         imports = [
           ./settings.nix
+          ./keybinds.nix
+          ./plugins
         ];
       };
 

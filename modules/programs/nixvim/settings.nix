@@ -1,6 +1,12 @@
 {
-  extraConfigLua = ''
-    -- Print a little welcome message when Neovim is opened!
-    print("Hello world from imports!")
-  '';
+  config = {
+
+    opts = {
+      number = true;
+      cursorline = true;
+      relativenumber = true;
+      shiftwidth = 4;
+    };
+
+  };
 }
