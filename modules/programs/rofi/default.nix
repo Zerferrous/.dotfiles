@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  host,
   ...
 }:
 let 
