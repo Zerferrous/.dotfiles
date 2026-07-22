@@ -9,7 +9,7 @@ let
 in
 {
   home-manager.sharedModules = [
-    inputs.nixvim.homeManagerModules.nixvim   
+    inputs.nixvim.homeModules.nixvim   
     (_: {
 
       programs.nixvim = {
