@@ -7,11 +7,8 @@
     loader = {
       limine = {
         enable = true;
-
-        #resolution = "2560x1440x32";
-
         style = {
-          
+          wallpaperStyle = "stretched";
         };
       };
 
