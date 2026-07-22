@@ -29,7 +29,7 @@ in
           display-run = "   Run ";
           display-window = "   Window";
           sidebar-mode = true;
-
+        };
           theme = {
             "window" = {
               height = 360;
@@ -80,11 +80,10 @@ in
 
             "button" = {
               padding = 10;
+              vertical-align = 0.5; 
+              horizontal-align = 0.5;
             };
           };
-
-        };
-
       };
     })
   ];
