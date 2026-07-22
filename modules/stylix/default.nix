@@ -28,7 +28,6 @@
         starship.enable = true;
         wayle.enable = true;
         rofi.enable = true;
-        neovim.enable = false;
       };
     })
   ];
