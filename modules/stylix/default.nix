@@ -3,10 +3,7 @@
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
   stylix.polarity = "dark";
-  stylix.autoEnable = false;
-
-  stylix.targets.limine.enable = true;
-  stylix.targets.ly.enable = true;
+  stylix.autoEnable = true;
 
   stylix.cursor = {
     package = pkgs.volantes-cursors;
