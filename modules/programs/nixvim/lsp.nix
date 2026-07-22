@@ -1,7 +1,7 @@
 {
   lsp = {
     servers = {
-      nil_ls.enable;
+      nil_ls.enable = true;
     };
   };
 }
