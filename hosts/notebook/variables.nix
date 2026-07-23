@@ -10,9 +10,9 @@
   fileManager = "yazi"; # ranger
   shell = "fish";
 
-  hostname = "VM-NixOS";
-  bluetoothSupport = false;
-  batterySupport = false;
+  hostname = "ZERFBOOK";
+  bluetoothSupport = true;
+  batterySupport = true;
 
   timezone = "Europe/Moscow";
   locale = "en_US.UTF-8";
